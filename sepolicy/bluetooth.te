@@ -3,8 +3,8 @@ type start_hci_filter_exec, exec_type, file_type;
 
 allow bluetooth self:capability2 wake_alarm;
 
-allow bluetooth smd_device:chr_file;
-allow bluetooth ta_data_file:dir search;
+allow bluetooth smd_device:chr_file
+allow bluetooth ta_data_file:dir search
 
 # FW file search
 allow bluetooth firmware_file:dir search;
