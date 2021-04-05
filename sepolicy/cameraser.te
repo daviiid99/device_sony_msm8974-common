@@ -15,7 +15,6 @@ allow cameraserver sysfs_camera_torch:file rw_file_perms;
 allow cameraserver sysfs_camera_torch:lnk_file r_file_perms;
 
 # connect to /data/misc/camera sockets
-allow cameraserver mm-qcamerad:unix_stream_socket connectto;
 # camera socket
 allow cameraserver camera_socket:dir rw_dir_perms;
 allow cameraserver camera_socket:file create_file_perms;
