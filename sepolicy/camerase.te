@@ -16,7 +16,7 @@ allow cameraserver sysfs_camera_torch:lnk_file r_file_perms;
 
 # connect to /data/misc/camera sockets
 # camera socket
-allow cameraserver camera_socket:dir rw_dir_perms; file create_file_perms;
+allow cameraserver camera_socket:dir rw_dir_perms;
 
 # credmgr socket
 allow cameraserver credmgrd:unix_stream_socket connectto;
