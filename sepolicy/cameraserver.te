@@ -13,8 +13,8 @@ allow cameraserver property_socket:sock_file write;
 allow cameraserver sysfs_camera_torch:dir search;
 allow cameraserver sysfs_camera_torch:file rw_file_perms;
 allow cameraserver sysfs_camera_torch:lnk_file r_file_perms;
-allow cameraserver sysfs_battery_supply:dir search;
-allow cameraserver sysfs_battery_supply:file r_file_perms;
+allow cameraserver sysfs_battery_supply;
+allow cameraserver sysfs_battery_supply;
 
 allow cameraserver camera_prop:file r_file_perms;
 
