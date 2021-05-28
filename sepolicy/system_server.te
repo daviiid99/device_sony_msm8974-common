@@ -7,7 +7,10 @@ allow system_server iddd_exec:dir search;
 allow system_server iddd_exec:file { getattr open read };
 allow system_server time_daemon:unix_stream_socket connectto;
 allow system_server diag_device:chr_file { open read write };
- 
+
+#Vendor
+get_prop(system_server, vendor_security_patch_level_prop);
+
 # debugfs
 allow system_server qti_debugfs:file r_file_perms;
 
