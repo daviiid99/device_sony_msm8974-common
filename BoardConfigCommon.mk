@@ -148,6 +148,9 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
 # Shims
 TARGET_LD_SHIM_LIBS += \
     /system/vendor/lib/libril-qc-qmi-1.so|libaudioclient_shim.so
+    
+# SODP build barrier
+PRODUCT_PLATFORM_SOD := true
 
 # Treble
 DEVICE_MANIFEST_FILE := device/sony/msm8974-common/treble-manifest.xml
