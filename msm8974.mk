@@ -188,7 +188,11 @@ PRODUCT_PACKAGES += \
      # WiFi Display
 PRODUCT_PACKAGES += \
     libnl \
+    libaacwrapper \
     libwfdaac_proprietary
+    
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/msm8974-common/msm8974-common-vendor.mk)
