@@ -188,6 +188,7 @@ PRODUCT_PACKAGES += \
      # WiFi Display
 PRODUCT_PACKAGES += \
     libnl \
+    libaacwrapper \
     libwfdaac_proprietary
 
 # Include non-opensource parts
