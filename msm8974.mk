@@ -185,11 +185,9 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
     
-     # WiFi Display
+     # Wi-Fi Display
 PRODUCT_PACKAGES += \
-    libnl \
-    libaacwrapper \
-    libwfdaac_proprietary
+    libmediaextractorservice
 
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/msm8974-common/msm8974-common-vendor.mk)
