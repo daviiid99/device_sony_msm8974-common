@@ -25,10 +25,6 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/msm8974-common/include
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
-# Kernel properties
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage
-TARGET_PREBUILT_DT := $(DEVICE_PATH)/prebuilt/dt.img
-
 # use CAF variants
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_USES_QCOM_BSP := true
