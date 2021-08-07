@@ -26,9 +26,8 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
 # Kernel properties
-ifeq (,$(filter $(TARGET_KERNEL_SOURCE),))
-  TARGET_KERNEL_SOURCE := kernel/sony/msm8974
-endif
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage
+TARGET_PREBUILT_DT := $(DEVICE_PATH)/prebuilt/dt.img
 
 # use CAF variants
 BOARD_USES_QCOM_HARDWARE := true
