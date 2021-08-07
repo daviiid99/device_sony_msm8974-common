@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
+DEVICE_PATH := device/sony/honami
+
 BOARD_VENDOR := sony
 
 BUILD_BROKEN_DUP_RULES := true
@@ -33,6 +36,10 @@ TARGET_QCOM_MEDIA_VARIANT := caf-msm8974
 # Platform
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
 TARGET_BOARD_PLATFORM := msm8974
+
+# Kernel properties
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage
+TARGET_PREBUILT_DT := $(DEVICE_PATH)/prebuilt/dt.img
 
 # Architecture
 TARGET_ARCH := arm
